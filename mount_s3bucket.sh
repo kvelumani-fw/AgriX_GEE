@@ -1,0 +1,1 @@
+sudo s3fs farmwise-data-assets:/home/ubuntu/ /home/ubuntu/mys3bucket/ -o allow_other -o passwd_file=/home/ubuntu/.s3fs-creds,nonempty

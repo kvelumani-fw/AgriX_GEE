@@ -1,0 +1,3 @@
+#python3 /home/ubuntu/AgriX-Api/Crop_Analyser/main_model_training.py --user_id=$1 --job_id=$2 --start_date="$3" --period=$4 --label_file_path="$5" --lat_long_label_cols="$6" --crop_name="$7"
+echo "\$1 = $1, \$2 = $2, \$3 = $3, \$4 = $4, \$5 = $5, \$6 = $6, \$7 = $7, \$8 = $8, \$9 = $9"
+python3 /home/ubuntu/AgriX-Api/Crop_Analyser/main.py --user_id="$1" --job_id="$2" --start_date="$3" --end_date="$4" --aoi_path="$5" --product_type="$6" --product_crop_type="$7" --request_type_id="$8" --model_path="$9" --direction='DESCENDING_VVVH' --ls_mask="False" --rmv_speckle="True"
